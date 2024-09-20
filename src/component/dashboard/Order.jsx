@@ -35,16 +35,8 @@ const Order = () => {
   };
 
   return (
-    <div className="w-[90vh] md:p-6 md:w-full">
+    <div className="w-[40vh] md:p-6 md:w-full overflow-x-auto">
       <h1 className="text-2xl font-bold mb-4 text-center">Order Details</h1>
-
-      <button 
-        onClick={() => window.open('http://localhost:1234/pdf/generate-pdf', '_blank')} 
-        className="bg-blue-500 text-white px-4 py-2 rounded mb-4 block mx-auto sm:inline"
-      >
-        Download All Orders PDF
-      </button>
-
       <div className="overflow-x-auto">
         <table className=" bg-white border border-gray-300 rounded-lg text-sm">
           <thead className="bg-gray-100">
